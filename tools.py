@@ -41,7 +41,7 @@ def train_model(x_train, y_train, epochs=3000, batch_size=16, lr=1e-3,
             print(f"Epoch: {ep}, Time: {t1:.2f}s, Loss: {train_l2}")
 
     return model, train_loss_history
-
+f
 
 # Save model state dict
 def save_model(model, filepath=None, *, epochs=None, n_samples=None, modes=(16,16), width=None, extra=''):
@@ -74,7 +74,7 @@ def load_model(filepath, device='cpu'):
 
 # Multi-resolution test (returns relative errors per resolution and predictions)
 def test_multi_resolution(model, test_resolutions, val_a=1.0, val_b=1.0, device='cpu'):
-    from boussinesq import Boussinesq, PseudoSpectralBoussinesq
+    from BOUSSINESQ.boussinesq import Boussinesq, PseudoSpectralBoussinesq
     import numpy as np
 
     results = {}
